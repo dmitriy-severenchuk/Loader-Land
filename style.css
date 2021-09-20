@@ -282,7 +282,11 @@ div {
   }
 }
 @media (max-width: 459px) {
-
+  .start__inner {
+    padding-bottom: 50px;
+  }.finally__inner {
+    padding-bottom: 50px;
+  }
   .progress-bar {
     padding: 18px 0;
   }
