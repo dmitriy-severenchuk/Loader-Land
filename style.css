@@ -91,6 +91,7 @@ div {
 .main__visibility-wrapper {
   display: none;
   transition: all 0.5s;
+  padding-bottom: 40px;
 }
 .main {
   width: 100%;
@@ -281,6 +282,13 @@ div {
   }
 }
 @media (max-width: 459px) {
+  .start__inner {
+    height: auto;
+    padding-top: 250px;
+  }.finally__inner {
+    height: auto;
+    padding-top: 250px;
+  }
   .progress-bar {
     padding: 18px 0;
   }
