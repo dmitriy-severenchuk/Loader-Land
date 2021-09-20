@@ -43,7 +43,7 @@ startButton.addEventListener('click', () => {
           res(clearInterval(i));
         }
         return counter;
-      }, 100);
+      }, 60);
     }, 800);
   }).then(() => {
     setTimeout(() => {
