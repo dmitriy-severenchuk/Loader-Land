@@ -224,9 +224,10 @@ div {
   width: 100%;
   max-width: 370px;
   margin: 0 auto;
+  overflow: hidden;
 }
 .finally__inner {
-  height: auto;
+  max-height: auto;
   text-align: center;
   
   display: flex;
