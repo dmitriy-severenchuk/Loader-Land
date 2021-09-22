@@ -375,6 +375,12 @@ div {
   .button {
     font-size: 20px;
   }
+  .progress-bar__wrapper {
+    margin-top: 3px;
+  }
+  .progress-bar {
+    padding: 15px 0;
+  }
   .main__inner {
     padding: 15px 0 20px;
   }
