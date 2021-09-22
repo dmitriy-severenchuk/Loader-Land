@@ -227,7 +227,7 @@ div {
 }
 .finally__inner {
   text-align: center;
-  height: 100vh;
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -239,10 +239,11 @@ div {
   font-size: 46px;
   font-weight: 700;
   margin-bottom: 30px;
+  margin-top: 150px;
 }
 .finally__text {
   font-size: 18px;
-  margin-bottom: 80px;
+  margin-bottom:  150px;
   /* margin-bottom: 25px; */
 }
 .finally__btn {
@@ -257,13 +258,10 @@ div {
 /* SWIPE */
 .swipe {
   width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }
 .swipe__main {
   padding: 15px 0;
-  margin-bottom: 70px;
+  margin-bottom: 0;
 }
 .swipe__text {
   font-size: 16px;
