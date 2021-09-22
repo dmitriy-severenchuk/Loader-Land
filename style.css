@@ -120,7 +120,7 @@ div {
   margin-top: 40px;
   position: relative;
 }
-.circle{
+.circle {
   display: none;
 }
 .progress-bar {
@@ -242,6 +242,7 @@ div {
 }
 .finally__text {
   font-size: 18px;
+  margin-bottom: 80px;
   /* margin-bottom: 25px; */
 }
 .finally__btn {
@@ -254,21 +255,22 @@ div {
 }
 
 /* SWIPE */
-.swipe{
+.swipe {
   width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
 }
-.swipe__main{
+.swipe__main {
   padding: 15px 0;
+  margin-bottom: 70px;
 }
-.swipe__text{
+.swipe__text {
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 20px;
 }
-.swipe__icon-wrapper{
+.swipe__icon-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -278,7 +280,7 @@ div {
   height: 50px;
   margin: 0 auto 0;
 }
-.swipe__icon{
+.swipe__icon {
   display: block;
   width: 23px;
   height: 23px;
@@ -318,13 +320,12 @@ div {
   }
 }
 @media (max-width: 459px) {
-
-
   .start__inner {
     padding-bottom: 50px;
-  }.finally__inner {
-    padding-bottom: 50px;
   }
+  /* .finally__inner {
+    padding-bottom: 50px;
+  } */
   .progress-bar {
     padding: 18px 0;
   }
