@@ -226,6 +226,7 @@ div {
   margin: 0 auto;
 }
 .finally__inner {
+  height: auto;
   text-align: center;
   
   display: flex;
@@ -260,7 +261,7 @@ div {
   width: 100%;
 }
 .swipe__main {
-  padding: 15px 0;
+  padding: 15px 0 0;
   margin-bottom: 0;
 }
 .swipe__text {
