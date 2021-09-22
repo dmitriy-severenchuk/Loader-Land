@@ -57,3 +57,24 @@ startButton.addEventListener('click', () => {
     }, 1600);
   });
 });
+
+
+// Swipe
+
+let touchstartY = 0
+let touchendY = 0
+
+const slider = document.getElementById('swipe')
+
+function handleGesture() {
+  if (touchendY + 100 < touchstartY) alert('swiped!');
+}
+
+slider.addEventListener('touchstart', e => {
+  touchstartY = e.changedTouches[0].screenY
+})
+
+slider.addEventListener('touchend', e => {
+  touchendY = e.changedTouches[0].screenY
+  handleGesture()
+})
