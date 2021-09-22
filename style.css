@@ -261,7 +261,7 @@ div {
 .swipe {
   width: 100%;
   position: fixed;
-  bottom: 50px;
+  bottom: 20px;
   right: 0;
   left: 0;
 }
