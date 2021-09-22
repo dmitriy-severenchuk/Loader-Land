@@ -260,6 +260,10 @@ div {
 /* SWIPE */
 .swipe {
   width: 100%;
+  position: fixed;
+  bottom: 100px;
+  right: 0;
+  left: 0;
 }
 .swipe__main {
   padding: 15px 0 0;
