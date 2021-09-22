@@ -163,7 +163,6 @@ div {
   margin-right: 0;
 }
 .reviews__box {
-
   box-shadow: 0px 3.248756170272827px 32.48756408691406px 0px
     rgba(0, 0, 0, 0.08);
   background-color: #fff;
@@ -330,7 +329,7 @@ div {
     font-size: 16px;
   }
   .main__inner {
-    padding: 40px 0 20px;
+    padding: 25px 0 20px;
   }
   .main__title {
     font-size: 26px;
@@ -345,6 +344,7 @@ div {
   }
   .reviews__header {
     margin-right: 20px;
+    margin-bottom: 7px;
   }
   .reviews__header__item {
     font-size: 13px;
@@ -355,7 +355,7 @@ div {
   }
   .reviews__box {
     padding: 10px 14px;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
   }
   .reviews__item__content__header-about__wrapper {
     padding: 5px 10px;
