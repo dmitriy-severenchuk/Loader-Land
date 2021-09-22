@@ -336,7 +336,7 @@ div {
     font-size: 26px;
   }
   .progress-bar__wrapper {
-    margin-top: 20px;
+    margin-top: 15px;
   }
   .reviews__item__img {
     width: 60px;
@@ -354,7 +354,8 @@ div {
     min-width: 50px;
   }
   .reviews__box {
-    padding: 15px 14px;
+    padding: 10px 14px;
+    margin-bottom: 6px;
   }
   .reviews__item__content__header-about__wrapper {
     padding: 5px 10px;
@@ -381,7 +382,7 @@ div {
     font-size: 24px;
   }
   .reviews__box {
-    padding: 12px;
+    padding: 10px 12px;
   }
 }
 @media (max-width: 361px) {
