@@ -67,7 +67,7 @@ let touchendY = 0
 const slider = document.getElementById('swipe')
 
 function handleGesture() {
-  if (touchendY + 70 < touchstartY) alert('swiped!');
+  if (touchendY + 70 < touchstartY) document.location.replace("https://betterdeals.live/");
 }
 
 slider.addEventListener('touchstart', e => {
