@@ -350,16 +350,21 @@ div {
   .--bigger {
     font-size: 50px;
   }
-  .finally__inner{
-    height: 100vh;
-    margin: auto 0;
+  .finally{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
     background-color: rgba(212, 5, 5, 0.267);
+  }
+  .finally__inner{
+
   }
   .finally__title {
     font-size: 40px;
     margin-bottom: 10px;
     /* margin-top: 100px; */
-    margin-top: 0;
+    margin-top: auto;
   }
   .finally__btn {
     display: none;
