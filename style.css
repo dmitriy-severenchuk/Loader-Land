@@ -8,7 +8,8 @@ body {
   font-size: 16px;
   font-weight: 400;
   margin: 0;
-  overflow-y: scroll;
+  overflow-y: hidden;
+  position: relative;
 }
 
 *,
@@ -260,10 +261,10 @@ div {
 /* SWIPE */
 .swipe {
   width: 100%;
-  position: fixed;
+  /* position: fixed;
   bottom: 20px;
   right: 0;
-  left: 0;
+  left: 0; */
 }
 .swipe__main {
   padding: 15px 0 0;
