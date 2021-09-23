@@ -254,14 +254,11 @@ div {
 }
 
 /* SWIPE */
+
 .swipe {
+
   width: 100%;
-  overflow-y: hidden;
   padding-top: 90px;
-  /* position: fixed;
-  bottom: 20px;
-  right: 0;
-  left: 0; */
 }
 .swipe__main {
   padding: 15px 0 10px;
@@ -322,6 +319,7 @@ div {
   }
 }
 @media (max-width: 459px) {
+  /* SWIPE */
   .start__inner {
     padding-bottom: 50px;
   }
@@ -363,6 +361,7 @@ div {
   }
   .finally__text {
     font-size: 16px;
+    margin-bottom:  60px;
   }
   .main__inner {
     padding: 25px 0 20px;
