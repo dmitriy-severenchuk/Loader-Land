@@ -1,15 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
 
 body {
-  height: 100vh;
   font-family: 'Montserrat', sans-serif;
   background-color: #fff;
   color: #000;
   font-size: 16px;
   font-weight: 400;
   margin: 0;
-  overflow-y: hidden;
-  position: relative;
 }
 
 *,
@@ -225,10 +222,8 @@ div {
   width: 100%;
   max-width: 370px;
   margin: 0 auto;
-  overflow: hidden;
 }
 .finally__inner {
-  max-height: auto;
   text-align: center;
   
   display: flex;
