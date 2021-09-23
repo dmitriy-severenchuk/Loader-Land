@@ -67,7 +67,7 @@ let touchendY = 0
 const slider = document.getElementById('swipe')
 
 function handleGesture() {
-  if (touchendY + 60 < touchstartY) alert('swiped!');
+  if (touchendY + 30 < touchstartY) alert('swiped!');
 }
 
 slider.addEventListener('touchstart', e => {
