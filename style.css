@@ -261,6 +261,7 @@ div {
 /* SWIPE */
 .swipe {
   width: 100%;
+  overflow-y: hidden;
   /* position: fixed;
   bottom: 20px;
   right: 0;
