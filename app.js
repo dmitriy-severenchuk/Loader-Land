@@ -78,9 +78,7 @@ function handleGesture() {
   if (touchendY + 70 < touchstartY) {
     document.getElementById('finallyContent').classList.add('--remove');
     document.getElementById('finallyLoading').classList.add('--show');
-    setTimeout(() => {
-      document.location.replace('https://betterdeals.live/');
-    }, 1500);
+    document.location.replace('https://betterdeals.live/');
   }
 }
 
