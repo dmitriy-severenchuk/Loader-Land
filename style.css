@@ -223,9 +223,10 @@ div {
   margin: 0 auto;
 }
 .finally__inner {
-  text-align: center;
 
-  display: flex;
+  text-align: center;
+  display: none;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -249,6 +250,13 @@ div {
 }
 .--bigger {
   font-size: 58px;
+}
+.finally__loading{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #0054f7;
+  padding-top: 250px;
 }
 
 /* SWIPE */

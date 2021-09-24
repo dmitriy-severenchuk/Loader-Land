@@ -75,8 +75,13 @@ let touchendY = 0;
 const slider = document.getElementById('swipe');
 
 function handleGesture() {
-  if (touchendY + 70 < touchstartY)
-    document.location.replace('https://betterdeals.live/');
+  if (touchendY + 70 < touchstartY) {
+    // finallBlock.classList.remove('--show');
+    finallBlock.classList.add('--remove');
+    setTimeout(() => {
+      document.location.replace('https://betterdeals.live/');
+    }, 1000);
+  }
 }
 
 slider.addEventListener('touchstart', (e) => {
