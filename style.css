@@ -50,7 +50,7 @@ div {
   opacity: 0;
 }
 .--remove {
-  display: none;
+  display: none !important;
 }
 /* START */
 .start {
@@ -223,10 +223,8 @@ div {
   margin: 0 auto;
 }
 .finally__inner {
-
   text-align: center;
-  display: none;
-  /* display: flex; */
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -251,7 +249,8 @@ div {
 .--bigger {
   font-size: 58px;
 }
-.finally__loading{
+.finally__loading {
+  display: none;
   text-align: center;
   font-size: 30px;
   font-weight: 700;
@@ -293,7 +292,7 @@ div {
   width: 64px;
   height: 64px;
   position: absolute;
-  border: 2px solid #3D64FF;
+  border: 2px solid #3d64ff;
   background-color: #6adcff21;
   left: calc(50% - 32px);
   top: calc(50% - 32px);
@@ -308,13 +307,13 @@ div {
 
 @keyframes up {
   0% {
-    transform: translate(0,0);
+    transform: translate(0, 0);
   }
   50% {
-    transform: translate(0,-40%);
+    transform: translate(0, -40%);
   }
   100% {
-    transform: translate(0,0);
+    transform: translate(0, 0);
   }
 }
 

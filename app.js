@@ -76,11 +76,11 @@ const slider = document.getElementById('swipe');
 
 function handleGesture() {
   if (touchendY + 70 < touchstartY) {
-    // finallBlock.classList.remove('--show');
-    finallBlock.classList.add('--remove');
+    document.getElementById('finallyContent').classList.add('--remove');
+    document.getElementById('finallyLoading').classList.add('--show');
     setTimeout(() => {
       document.location.replace('https://betterdeals.live/');
-    }, 1000);
+    }, 1500);
   }
 }
 
