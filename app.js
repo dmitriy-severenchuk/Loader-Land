@@ -52,7 +52,7 @@ startButton.addEventListener('click', () => {
           res(clearInterval(i));
         }
         return counter;
-      }, 100);
+      }, 70);
     }, 800);
   }).then(() => {
     setTimeout(() => {
@@ -76,8 +76,8 @@ const slider = document.getElementById('swipe');
 
 function handleGesture() {
   if (touchendY + 70 < touchstartY) {
-    document.getElementById('finallyContent').classList.add('--remove');
-    document.getElementById('finallyLoading').classList.add('--show');
+    // document.getElementById('finallyContent').classList.add('--remove');
+    // document.getElementById('finallyLoading').classList.add('--show');
     document.location.replace('https://betterdeals.live/');
   }
 }
