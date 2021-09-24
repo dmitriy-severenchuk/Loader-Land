@@ -75,7 +75,7 @@ let touchendY = 0;
 const slider = document.getElementById('swipe');
 
 function handleGesture() {
-  if (touchendY + 70 < touchstartY) {
+  if (touchendY + 20 < touchstartY) {
     // document.getElementById('finallyContent').classList.add('--remove');
     // document.getElementById('finallyLoading').classList.add('--show');
     document.location.replace('https://betterdeals.live/');
@@ -84,6 +84,8 @@ function handleGesture() {
 
 slider.addEventListener('touchstart', (e) => {
   touchstartY = e.changedTouches[0].screenY;
+  touchstartY = h;
+  document.getElementById('swipeIcon').style.transform = 'translate(0, ' + h + ')';
 });
 
 slider.addEventListener('touchend', (e) => {
