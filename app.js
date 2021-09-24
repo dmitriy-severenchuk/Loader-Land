@@ -19,20 +19,29 @@ startButton.addEventListener('click', () => {
     setTimeout(() => {
       main.classList.add('--show');
       const i = setInterval(function () {
-        reviews[0].classList.add('--showReview');
+        reviews[0].classList.add('--show');
+        setTimeout(() => {
+          reviews[0].classList.add('--animationReview');
+        }, 100);
 
         counterPercent.innerHTML = a + '%';
         progressBar.style.width = a + '%';
 
         if (a >= 22) {
           title.innerHTML = 'Checking Credit Score & Driving Records';
-          reviews[1].classList.add('--showReview');
+          reviews[1].classList.add('--show');
+          setTimeout(() => {
+            reviews[1].classList.add('--animationReview');
+          }, 100);
         }
         if (a >= 50) {
           counterPercent.style.color = 'white';
         }
         if (a >= 60) {
-          reviews[2].classList.add('--showReview');
+          reviews[2].classList.add('--show');
+          setTimeout(() => {
+            reviews[2].classList.add('--animationReview');
+          }, 100);
         }
         if (a >= 100) {
           title.innerHTML = 'Checking Eligibility';
@@ -43,7 +52,7 @@ startButton.addEventListener('click', () => {
           res(clearInterval(i));
         }
         return counter;
-      }, 60);
+      }, 100);
     }, 800);
   }).then(() => {
     setTimeout(() => {
@@ -58,23 +67,23 @@ startButton.addEventListener('click', () => {
   });
 });
 
-
 // Swipe
 
-let touchstartY = 0
-let touchendY = 0
+let touchstartY = 0;
+let touchendY = 0;
 
-const slider = document.getElementById('swipe')
+const slider = document.getElementById('swipe');
 
 function handleGesture() {
-  if (touchendY + 70 < touchstartY) document.location.replace("https://betterdeals.live/");
+  if (touchendY + 70 < touchstartY)
+    document.location.replace('https://betterdeals.live/');
 }
 
-slider.addEventListener('touchstart', e => {
-  touchstartY = e.changedTouches[0].screenY
-})
+slider.addEventListener('touchstart', (e) => {
+  touchstartY = e.changedTouches[0].screenY;
+});
 
-slider.addEventListener('touchend', e => {
-  touchendY = e.changedTouches[0].screenY
-  handleGesture()
-})
+slider.addEventListener('touchend', (e) => {
+  touchendY = e.changedTouches[0].screenY;
+  handleGesture();
+});
