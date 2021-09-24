@@ -68,9 +68,14 @@ div {
 }
 .start {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   transform: translate(0, 0);
   transition: all 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 .start__inner {
   width: 100%;
