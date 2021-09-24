@@ -72,9 +72,9 @@ startButton.addEventListener('click', () => {
 let touchstartY = 0;
 let touchendY = 0;
 
-const slider = document.getElementById('swipe');
+const swipe = document.getElementById('swipe');
 
-function handleGesture() {
+function redirect() {
   if (touchendY + 20 < touchstartY) {
     // document.getElementById('finallyContent').classList.add('--remove');
     // document.getElementById('finallyLoading').classList.add('--show');
@@ -82,13 +82,19 @@ function handleGesture() {
   }
 }
 
-slider.addEventListener('touchstart', (e) => {
+swipe.addEventListener('touchstart', (e) => {
   touchstartY = e.changedTouches[0].screenY;
-  touchstartY = h;
-  document.getElementById('swipeIcon').style.transform = 'translate(0, ' + h + ')';
 });
 
-slider.addEventListener('touchend', (e) => {
+// swipe.addEventListener('touchmove', (e) => {
+//   touchPosition = {
+//     x: e.changedTouches[0].clientX,
+//     y: e.changedTouches[0].clientY,
+//   };
+//   Draw(touchPosition.x, touchPosition.y, 2);
+// });
+
+swipe.addEventListener('touchend', (e) => {
   touchendY = e.changedTouches[0].screenY;
-  handleGesture();
+  redirect();
 });
