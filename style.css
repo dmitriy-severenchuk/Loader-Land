@@ -54,6 +54,9 @@ div {
   transform: translate(0, -30%) !important;
   opacity: 0;
 }
+.--animationOpacity {
+  opacity: 0 !important;
+}
 .--remove {
   display: none !important;
 }
@@ -201,6 +204,8 @@ div {
   overflow: hidden;
   margin-top: 40px;
   position: relative;
+  opacity: 1;
+  transition: all ease .2s;
 }
 .progress-bar {
   width: 0px;
@@ -220,7 +225,6 @@ div {
   left: calc(50% - 50px);
   transition: color ease 0.2s;
 }
-
 .reviews {
   flex: 1 1 auto;
   width: 100%;
@@ -252,6 +256,14 @@ div {
   margin-bottom: 12px;
   opacity: 0;
   transition: all ease 0.7s;
+}
+.main__done{
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.main__done-img{
+  height: 50px;
 }
 .reviews__item {
   display: flex;

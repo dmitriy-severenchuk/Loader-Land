@@ -38,13 +38,21 @@ startButton.addEventListener('click', () => {
           counterPercent.style.color = 'white';
         }
         if (a >= 60) {
+          title.innerHTML = 'Checking Eligibility';
           reviews[2].classList.add('--show');
           setTimeout(() => {
             reviews[2].classList.add('--animationReview');
           }, 100);
         }
         if (a >= 100) {
-          title.innerHTML = 'Checking Eligibility';
+          document.getElementById('progressBarWrap').classList.add('--animationOpacity');
+          setTimeout(() => {
+            document.getElementById('progressBarWrap').classList.add('--remove');
+          }, 300);
+          setTimeout(() => {
+            document.getElementById('done').classList.add('--flex');
+          }, 300);
+
         }
         counter++;
         a++;
@@ -54,7 +62,8 @@ startButton.addEventListener('click', () => {
         return counter;
       }, 60);
     }, 800);
-  }).then(() => {
+  })
+  .then(() => {
     setTimeout(() => {
       main.classList.add('--animationRemove');
     }, 1300);
