@@ -617,6 +617,7 @@ div {
     font-size: 14px;
   }
   .footer__inner{
+    justify-content: center;
     padding: 10px 0;
   }
   .footer__logo{
@@ -636,7 +637,7 @@ div {
   }
   .footer__text{
     text-align: center;
-    max-width: 60%;
+    max-width: 300px;
     font-size: 7px;
     margin: 0 auto;
   }
