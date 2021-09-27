@@ -523,7 +523,7 @@ div {
     margin-right: 20px;
   }
   .header__logo{
-    width: 180px;
+    width: 160px;
   }
   /* SWIPE */
   .swipe {
@@ -642,7 +642,16 @@ div {
     margin: 0 auto;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 385px) {
+  .container{
+    padding: 0 16px;
+  }
+  .header__nav-link{
+    margin-right: 15px;
+  }
+  .header__logo{
+    width: 140px;
+  }
   .button {
     font-size: 20px;
   }
@@ -684,6 +693,12 @@ div {
   }
 }
 @media (max-width: 361px) {
+  .header__logo{
+    width: 120px;
+  }
+  .header__nav-link{
+    font-size: 13px;
+  }
   .reviews__item__img {
     min-width: 65px;
     height: 65px;
