@@ -261,9 +261,10 @@ div {
   display: none;
   justify-content: center;
   align-items: center;
+  margin-top: 40px;
 }
 .main__done-img{
-  height: 50px;
+  height: 54px;
 }
 .reviews__item {
   display: flex;
@@ -560,6 +561,12 @@ div {
     top: calc(50% - 15px);
     left: calc(50% - 50px);
   }
+  .main__done{
+    margin-top: 15px;
+  }
+  .main__done-img{
+    height: 40px;
+  }
   .text {
     font-size: 16px;
   }
@@ -694,6 +701,12 @@ div {
   .reviews__box {
     padding: 10px 12px;
     margin-bottom: 6px;
+  }
+  .main__done{
+    margin-top: 3px;
+  }
+  .main__done-img{
+    height: 34px;
   }
   .footer-box__head_link {
     font-size: 12px;
