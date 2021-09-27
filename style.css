@@ -417,7 +417,7 @@ div {
   border-left-color: #3d64ff;
   border-radius: 50%;
   animation: loader 2s linear infinite;
-  margin: 0 auto;
+  margin: 0 auto 15px;
 }
 
 @keyframes loader {
