@@ -78,7 +78,7 @@ function redirect() {
   if (touchendY + 20 < touchstartY) {
     document.getElementById('swipeIcon').classList.add('--remove');
     document.getElementById('swipeLoader').classList.add('--show');
-    // document.location.replace('https://betterdeals.live/');
+    document.location.replace('https://betterdeals.live/');
   }
 }
 
