@@ -17,7 +17,7 @@ startButton.addEventListener('click', () => {
   }, 600);
   new Promise((res) => {
     setTimeout(() => {
-      main.classList.add('--show');
+      main.classList.add('--flex');
       const i = setInterval(function () {
         reviews[0].classList.add('--show');
         setTimeout(() => {
@@ -59,10 +59,10 @@ startButton.addEventListener('click', () => {
       main.classList.add('--animationRemove');
     }, 1300);
     setTimeout(() => {
-      main.classList.remove('--show');
+      main.classList.remove('--flex');
     }, 1700);
     setTimeout(() => {
-      finallBlock.classList.add('--show');
+      finallBlock.classList.add('--flex');
     }, 1600);
   });
 });
