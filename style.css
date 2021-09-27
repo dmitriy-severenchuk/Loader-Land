@@ -549,7 +549,7 @@ div {
   }
   .finally__inner {
     position: absolute;
-    bottom: 115px;
+    bottom: 95px;
     right: 0;
     left: 0;
   }
@@ -611,6 +611,7 @@ div {
   }
   .footer__logo{
     width: 130px;
+    margin-bottom: 5px;
   }
   .footer__image{
     width: 190px;
@@ -619,8 +620,9 @@ div {
     font-size: 13px;
   }
   .footer__text{
-    max-width: 200px;
-    font-size: 9px;
+    max-width: 100%;
+    font-size: 7px;
+    margin-top: 6px;
   }
 }
 @media (max-width: 380px) {
