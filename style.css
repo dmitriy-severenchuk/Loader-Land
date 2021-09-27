@@ -251,7 +251,6 @@ div {
   padding: 15px 30px;
   margin-bottom: 12px;
   opacity: 0;
-
   transition: all ease 0.7s;
 }
 .reviews__item {
@@ -520,6 +519,9 @@ div {
   }
   .header__logo {
     width: 160px;
+  }
+  .reviews {
+    padding-bottom: 20px;
   }
   /* SWIPE */
   .swipe {
