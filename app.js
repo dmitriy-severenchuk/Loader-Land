@@ -76,9 +76,9 @@ const swipe = document.getElementById('swipe');
 
 function redirect() {
   if (touchendY + 20 < touchstartY) {
-    // document.getElementById('finallyContent').classList.add('--remove');
-    // document.getElementById('finallyLoading').classList.add('--show');
-    document.location.replace('https://betterdeals.live/');
+    document.getElementById('swipeIcon').classList.add('--remove');
+    document.getElementById('swipeLoader').classList.add('--show');
+    // document.location.replace('https://betterdeals.live/');
   }
 }
 
