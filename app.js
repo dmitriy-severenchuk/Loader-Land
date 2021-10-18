@@ -3,56 +3,70 @@ let a = 0;
 let counterPercent = document.getElementById('counter');
 let progressBar = document.getElementById('progressBar');
 let title = document.getElementById('title');
-let reviews = document.querySelectorAll('#review');
-let startButton = document.getElementById('startButton');
 let main = document.getElementById('main');
-let startBlock = document.getElementById('startBlock');
 let finallBlock = document.getElementById('finally');
+// let button = document.getElementById('button');
+let description = document.getElementById('description');
+let congrat = document.getElementById('congratulations');
+let finallyContent = document.getElementById('finallyContent');
+
+const confettiContainer = document.getElementById('confetti');
+const animItem = bodymovin.loadAnimation({
+  wrapper: confettiContainer,
+  animType: 'svg',
+  loop: false,
+  autoplay: false,
+  path: 'https://assets10.lottiefiles.com/packages/lf20_obhph3sh.json',
+});
+
+ConfettiFunction = function () {
+  confettiContainer.classList.remove('hide');
+  animItem.goToAndPlay(0, true);
+};
+// button.addEventListener('click', () => {
+//   confettiContainer.classList.remove('hide');
+//   animItem.goToAndPlay(0, true);
+// });
+animItem.addEventListener('complete', () => {
+  confettiContainer.classList.add('hide');
+});
+
 //START
 
-startButton.addEventListener('click', () => {
-  startBlock.classList.add('--animationRemove');
-  setTimeout(() => {
-    startBlock.classList.add('--remove');
-  }, 600);
+Start = function () {
   new Promise((res) => {
     setTimeout(() => {
       main.classList.add('--flex');
       const i = setInterval(function () {
-        reviews[0].classList.add('--show');
-        setTimeout(() => {
-          reviews[0].classList.add('--animationReview');
-        }, 100);
-
         counterPercent.innerHTML = a + '%';
         progressBar.style.width = a + '%';
-
-        if (a >= 22) {
-          title.innerHTML = 'Checking Credit Score & Driving Records';
-          reviews[1].classList.add('--show');
-          setTimeout(() => {
-            reviews[1].classList.add('--animationReview');
-          }, 100);
-        }
-        if (a >= 50) {
-          counterPercent.style.color = 'white';
-        }
-        if (a >= 60) {
-          title.innerHTML = 'Checking Eligibility';
-          reviews[2].classList.add('--show');
-          setTimeout(() => {
-            reviews[2].classList.add('--animationReview');
-          }, 100);
-        }
+        // if (a >= 15) {
+        //   title.innerHTML = 'Loading.';
+        // }
+        // if (a >= 30) {
+        //   title.innerHTML = 'Loading..';
+        // }
+        // if (a >= 45) {
+        //   title.innerHTML = 'Loading...';
+        // }
+        // if (a >= 60) {
+        //   title.innerHTML = 'Loading.';
+        // }
+        // if (a >= 75) {
+        //   title.innerHTML = 'Loading..';
+        // }
         if (a >= 100) {
-          document.getElementById('progressBarWrap').classList.add('--animationOpacity');
-          setTimeout(() => {
-            document.getElementById('progressBarWrap').classList.add('--remove');
-          }, 300);
-          setTimeout(() => {
-            document.getElementById('done').classList.add('--flex');
-          }, 300);
+          ConfettiFunction();
+          // title.innerHTML = 'Loading...';
+          // document
+          //   .getElementById('progressBarWrap')
+          //   .classList.add('--animationOpacity');
 
+          // setTimeout(() => {
+          //   document
+          //     .getElementById('progressBarWrap')
+          //     .classList.add('--remove');
+          // }, 300);
         }
         counter++;
         a++;
@@ -60,50 +74,28 @@ startButton.addEventListener('click', () => {
           res(clearInterval(i));
         }
         return counter;
-      }, 60);
-    }, 800);
-  })
-  .then(() => {
+      }, 20);
+    }, 150);
+  }).then(() => {
     setTimeout(() => {
       main.classList.add('--animationRemove');
-    }, 1300);
+    }, 500);
     setTimeout(() => {
       main.classList.remove('--flex');
-    }, 1700);
+    }, 500);
     setTimeout(() => {
       finallBlock.classList.add('--flex');
-    }, 1600);
+    }, 600);
+    setTimeout(() => {
+      finallyContent.classList.add('--showOpacity');
+    }, 1400);
+    setTimeout(() => {
+      description.classList.add('--showOpacity');
+    }, 2000);
+    // setTimeout(() => {
+    //   document.location.replace('https://track.betterdeals.live/click');
+    // }, 5800);
   });
-});
+};
 
-// Swipe
-
-let touchstartY = 0;
-let touchendY = 0;
-
-const swipe = document.getElementById('swipe');
-
-function redirect() {
-  if (touchendY + 20 < touchstartY) {
-    document.getElementById('swipeIcon').classList.add('--remove');
-    document.getElementById('swipeLoader').classList.add('--show');
-    document.location.replace('https://betterdeals.live/');
-  }
-}
-
-swipe.addEventListener('touchstart', (e) => {
-  touchstartY = e.changedTouches[0].screenY;
-});
-
-// swipe.addEventListener('touchmove', (e) => {
-//   touchPosition = {
-//     x: e.changedTouches[0].clientX,
-//     y: e.changedTouches[0].clientY,
-//   };
-//   Draw(touchPosition.x, touchPosition.y, 2);
-// });
-
-swipe.addEventListener('touchend', (e) => {
-  touchendY = e.changedTouches[0].screenY;
-  redirect();
-});
+Start();
