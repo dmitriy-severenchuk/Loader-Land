@@ -285,7 +285,12 @@ div {
   .container {
     padding: 0 16px;
   }
-
+  .finally__uptitle {
+    font-size: 32px;
+    width: 280px;
+    left: calc(50% - 140px);
+    top: 120px;
+  }
   .progress-bar__wrapper {
     margin-top: 14px;
   }
@@ -298,13 +303,15 @@ div {
     font-size: 14px;
     margin-bottom: 0;
   }
-  .description {
-    margin-top: 40px;
-  }
   .footer-box__head_link {
     font-size: 12px;
   }
   .footer__image {
     width: 150px;
+  }
+}
+@media (max-width: 350px) {
+  .finally__uptitle {
+    top: 80px;
   }
 }
